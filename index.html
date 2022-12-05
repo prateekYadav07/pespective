@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="top-container">
+            <div class="container">
+                <label for="perspective">perspective {{perspective}}px;</label>
+                <input type="range" min="0" max="999" v-model="perspective" name="pers">
+                <label for="rotateX">rotateX {{anglex}}deg;</label>
+                <input type="range" min="-180" max="180" v-model="anglex" >
+                <label for="rotateY">rotateY {{angley}}deg;</label>
+                <input type="range" min="-180" max="180" name="rotateY" v-model="angley">
+                <label for="rotateZ">rotateZ {{anglez}}deg;</label>
+                <input type="range" min="-180" max="180" name="rotateZ" v-model="anglez">
+                <div class="btn-grp">
+                    <button type="reset" @click.prevent="resetProps">Reset</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="outer-box" >
+                    <!-- <div class="inner-box" :style="box"> -->
+                        <img :style="box" src="Firefox_logo,_2019.svg" alt="" srcset="">
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
