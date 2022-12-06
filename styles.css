@@ -7,8 +7,8 @@
     }
 
     .outer-box {
-        height: 100px;
-        width: 100px;
+        height: 90%;
+        width: 90%;
         padding: 10px;
         overflow: hidden;
     }
