@@ -7,8 +7,8 @@
     }
 
     .outer-box {
-        height: 100px;
-        width: 100px;
+        height: 90%;
+        width: 90%;
         padding: 10px;
         overflow: hidden;
     }
@@ -22,7 +22,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     min-height: 100vh;
+     height: 100%;
      background: #131313;
  }
 
